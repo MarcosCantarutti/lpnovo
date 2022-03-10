@@ -8,21 +8,35 @@ html {
     font-size: 62.5%;
 }
 
-.navbar {
-    background-color: #06213F;  
+body {
+  background-color: #15253e;
+  overflow-x: hidden;
 }
 
+.navbar{
+  background-color: #15253e;
+}
+
+
+
+
+.logo {
+  width: 6rem;
+  height: 6rem;
+  transform: scale(3);
+}
 
 
 .nav-item a {
     font-size: 2rem;
-    color: #DFD5CA;
+    color: #e6ddd4;
     transition: 0.2s;
 }
 
+
 #content {
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('../assets/bg.jpg') 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,108 +54,134 @@ html {
 } 
 
 .text-container blockquote, cite {
-    font-size: 3rem;
-    color: #DFD5CA;
-    font-weight: bold;
+    font-size: 2.5rem;
+    color: #e6ddd4;
     text-align: left;
+}
+
+.text-container .main-btn {
+  background-color: #15253e;
+  color: #e6ddd4;
+  text-transform: uppercase;
+  width: 12rem;
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  transition: .5s;
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.text-container h1 {
+  font-style: normal;
+  color: #e6ddd4;
+  text-align: center;
+  margin: 2rem auto 0;
+}
+
+.text-container .main-btn a {
+  color: #e6ddd4;
+}
+
+.text-container .main-btn:hover{
+  transform: scale(1.1);
+  background-color: #d07f57;
+  text-decoration: none;
 }
 
 
 #about-area {
-    background-color: #F9F9F9;
-    height: 100vh;
+    background-color: #FFFFFF;  
+    height: auto;
+    padding: 5.5rem 0 5rem 0;
   }
   
   .main-title {
-    color: #073251;
+    color: #d07f57;
     margin: 2rem 0 6.5rem 0;
     font-size: 4rem;
     text-align: center;
+    font-weight: bold;
   }
   
   .main-title::after {
     content: "";
-    border-top: 2px solid #06213F;
+    border-top: 2px solid #d07f57;
     width: 15%;
     position: absolute;
-    top: 80px;
+    top: 8rem;
     left: 42.5%;
   }
   
   .about-title {
     font-size: 2rem;
-    color: #073251;
+    color: #d07f57;
     text-transform: uppercase;
     font-weight: bold;
   }
 
   #about-area p {
-      color: #073251;
+      color: #15253e;
       font-size: 1.6rem;
   }
-  
 
 
-#services {
-    width: 100vw;
-    height: auto;
-    margin: 0 auto;
-    padding: 10rem;
-    background-color: #06213F; 
-}
+  #services-area {
+    background-color: #15253e;
+  }
 
-.services-title {
-    color: #DFD5CA;
-    margin: 0 0 6.5rem 0;
-    font-size: 4rem;
+  .main-title.service {
+    padding-top: 2rem;
+  }
+  .main-title.service::after {
+    top: 100px;
+  }
+
+  .service-box {
     text-align: center;
-}
+    margin-bottom: 5rem;
+  }
 
-.services-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-}
-
-#services h1 {
-    color: #06213F;
-}
-
-#services p {
-    color: #010101;
-    font-weight: bold;
+  .service-box img {
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+  
+  .service-box h4 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    color: #d07f57;
+    text-decoration: underline;
+  }
+  
+  .service-box p {
     font-size: 1.6rem;
-}
+    color: #e6ddd4;
+  }
 
-#services .btn{
-    background-color: #073251;
-    color: #DFD5CA;
-    font-weight: bold;
-    font-size: 1.6rem;
-    border-radius: 0.5rem;
-    transition: 0.3s;
-}
-
-#services .btn:hover{
-    transform: scale(1.05);
-}
 
 /* Footer */
 
 #contact-area {
     text-align: center;
+    background-color: #FFFFFF;
   }
   
   .contact-box {
     padding-bottom: 50px;
     margin-bottom: 50px;
-    border-bottom: 1px solid #06213F;
+    border-bottom: 1px solid #15253e;
   }
   
   .contact-box i {
-    color: #06213F;
+    color: #15253e;
     border: solid 1px #010101;
+    background-color: #e6ddd4;
     border-radius: 50%;
     width: 55px;
     height: 55px;
@@ -152,17 +192,18 @@ html {
   
   .contact-box p {
     font-size: 1.6rem;
-    color: #073251;
+    color: #15253e;
   }
   
   .contact-tile {
     font-weight: bold;
-    color: #073251;
+    color: #15253e;
   }
   
   #msg-box p {
     font-size: 2rem;
-    color: #06213F;
+    font-weight: bold;
+    color: #15253e;
   }
   
   #contact-form input[type="text"], #contact-form textarea {
@@ -181,36 +222,37 @@ html {
  #msg-box .img-contact {
       height: 20rem;
       border-radius: 50%;
-    
   }
   
   #contact-form .main-btn:hover {
-    color: #F9F9F9;
-    background-color: #073251;
+    color: #e6ddd4;
+    background-color: #d07f57;
   }
   
   /* Copy */
   
   #copy-area {
-    background-color: #F1F1F1;
+    margin-top: 1rem;
+   background-color: #15253e;
   }
   
   #copy-area .container {
-    padding: 10px 0;
+    padding: 1rem 0;
     text-align: center;
   }
   
   #copy-area .container p {
     margin-bottom: 0;
+    color: #e6ddd4;
   }
   
   #copy-area .container a {
     font-weight: bold;
-    color: #010101;
+    color: #e6ddd4;
     transition: 0.3s;
   }
   
   #copy-area .container a:hover {
     text-decoration: none;
-    color: #073251;
+    color: #d07f57;
   }
