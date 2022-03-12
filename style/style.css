@@ -6,6 +6,12 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:target {
+  scroll-margin-top: 5rem;
 }
 
 body {
@@ -13,29 +19,36 @@ body {
   overflow-x: hidden;
 }
 
-.navbar{
+header, .navbar {
   background-color: #15253e;
 }
 
+#nav-container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
-
-
-.logo {
-  width: 6rem;
-  height: 6rem;
-  transform: scale(3);
+#logo {
+  width: 7rem;
+  transform: scale(2.5);
 }
 
 
-.nav-item a {
-    font-size: 2rem;
-    color: #e6ddd4;
-    transition: 0.2s;
+
+.navbar-nav{
+  text-align: center;
+  margin: 0 auto;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 1rem .8rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FFF;
+}
 
 #content {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('../assets/bg.jpg') 50%;
     background-repeat: no-repeat;
@@ -53,27 +66,39 @@ body {
     
 } 
 
-.text-container blockquote, cite {
-    font-size: 2.5rem;
+.text-container blockquote {
+    font-size: 3rem;
     color: #e6ddd4;
-    text-align: left;
+    text-align: center;
+}
+
+.text-container p{
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 5rem auto 0;
+  color: #e6ddd4;
 }
 
 .text-container .main-btn {
-  background-color: #15253e;
+  background-color: #d07f57;
   color: #e6ddd4;
   text-transform: uppercase;
-  width: 12rem;
-  height: 5rem;
+  width: 20rem;
+  height: 8rem;
   padding: 1rem;
   border-radius: 0.5rem;
   border: 1px solid transparent;
   transition: .5s;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   cursor: pointer;
   margin: 0 auto;
   font-weight: bold;
+}
+
+.text-container .main-btn a{
+  margin: 0 auto;
+  text-align: center;
 }
 .text-container h1 {
   font-style: normal;
@@ -84,12 +109,17 @@ body {
 
 .text-container .main-btn a {
   color: #e6ddd4;
+  font-weight: bold;
 }
 
 .text-container .main-btn:hover{
   transform: scale(1.1);
-  background-color: #d07f57;
   text-decoration: none;
+}
+
+.text-container .main-btn:hover a {
+  text-decoration: none;
+  color: #010101;
 }
 
 
@@ -102,7 +132,7 @@ body {
   .main-title {
     color: #d07f57;
     margin: 2rem 0 6.5rem 0;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     font-weight: bold;
   }
@@ -170,6 +200,7 @@ body {
 #contact-area {
     text-align: center;
     background-color: #FFFFFF;
+    margin: 2rem auto;
   }
   
   .contact-box {
@@ -193,6 +224,18 @@ body {
   .contact-box p {
     font-size: 1.6rem;
     color: #15253e;
+  }
+
+  .contact-box a, .contact-box span {
+    font-size: 1.6rem;
+    color: #15253e;
+    text-decoration: none; 
+    transition: 0.1s;   
+  }
+
+  .contact-box a:hover{
+    text-decoration: none;
+    color: #d07f57;
   }
   
   .contact-tile {
@@ -255,4 +298,173 @@ body {
   #copy-area .container a:hover {
     text-decoration: none;
     color: #d07f57;
+  }
+
+  /* LP Enterprise*/
+
+  /*About page*/
+
+  #about-container {
+    background-color: #e6ddd4;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .text-container.about{
+   padding: 5rem;
+    margin: 5rem auto 0rem;
+  }
+  #about-container .text-container h1{
+    color: #d07f57;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  #about-container .text-container p{
+    color: #15253e;
+    font-size: 2rem;
+  }
+
+  #copy-area{
+    margin: 0 auto;
+  }
+
+  .whatsapp-btn {
+    position: fixed;
+    width: 5rem;
+    bottom: 0;
+    right: 1rem;
+    margin: 2rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  .whatsapp-btn:hover{
+    transform: scale(1.2);
+  }
+
+
+  @media only screen and (max-width: 500px) {
+    
+    .text-container{
+        max-width: 55rem;
+        padding-top: 15rem; 
+    } 
+    
+    .text-container blockquote {
+        font-size: 2.5rem;
+    }
+    
+    .text-container p{
+      font-size: 2.5rem;
+      
+    }
+
+    #about-area {
+      background-color: #FFFFFF;  
+      height: auto;
+      padding: 5rem;
+    }
+    
+    .main-title {
+      font-size: 2.5rem;
+    }
+    
+    .main-title::after {
+      width: 40%;
+      top: 15rem;
+      left: 30%;
+    }
+    
+  
+    #about-area p {
+        color: #15253e;
+        font-size: 2rem;
+        margin: 2rem auto;
+    }
+
+    .main-title.service {
+      padding-top: 2rem;
+    }
+    .main-title.service::after {
+      top: 120px;
+    }
+  
+    .service-box img {
+      width: 30rem;
+      height: 20rem;
+      padding: 1rem;
+      border-radius: 2rem;
+    }
+    
+    .service-box h4 {
+      font-size: 2.5rem;
+      margin-top: 2rem;
+    }
+    
+    .service-box p {
+      font-size: 1.8rem;
+      color: #e6ddd4;
+    }
+  
+  
+  /* Footer */
+  
+  #contact-area .main-title::after {
+    width: 40%;
+    top: 10rem;
+    left: 30%;
+  }
+    
+    
+    #msg-box p {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #15253e;
+      margin: 1rem 0 1rem 0;
+    }
+    
+  
+  
+   #msg-box .img-contact {
+        height: 15rem;
+        border-radius: 50%;
+        margin: 2rem auto 2rem;
+    }
+    
+    html {
+      overflow-x: hidden;
+    }
+    
+    /* Copy */
+    
+    #copy-area {
+      margin-top: 1rem;
+     background-color: #15253e;
+    }
+    
+
+    .whatsapp-btn {
+      position: fixed;
+      width: 5rem;
+      bottom: 0;
+      right: 1rem;
+      margin: 1rem;
+      cursor: pointer;
+      transition: .3s;
+    }
+  
+    .whatsapp-btn:hover{
+      transform: scale(1.1);
+    }
+  
+    
+.logo {
+  width: 7.5rem;
+  height:7.5rem;
+  transform: scale(3);
+}
+    
+    
+
   }
