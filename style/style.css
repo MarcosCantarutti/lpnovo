@@ -468,6 +468,18 @@ header, .navbar {
       height: auto;
       padding: 5rem;
     }
+
+    #about-area h1 {
+      margin: 0 auto 2rem;
+      text-align: center;
+      padding: 2rem;
+      color: #15253e;
+      background-color: #d07f57;
+      width: 30rem;
+      font-size: 2rem;
+      border-radius: 2rem;
+      text-decoration: underline;
+    }
     
     .main-title {
       font-size: 2.5rem;
@@ -479,6 +491,9 @@ header, .navbar {
       left: 30%;
     }
     
+    #about-area img {
+      margin: 0 auto 3rem;
+    }
   
     #about-area p {
         color: #15253e;
