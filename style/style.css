@@ -153,6 +153,10 @@ header, .navbar {
     font-weight: bold;
   }
 
+  #about-area .container{
+    margin-bottom: 8rem;
+  }
+
   #about-area p {
       color: #15253e;
       font-size: 1.6rem;
@@ -192,6 +196,44 @@ header, .navbar {
   .service-box p {
     font-size: 1.6rem;
     color: #e6ddd4;
+  }
+
+  /*
+    FAQ
+  */
+
+  #questions-area{
+    margin-top: 5rem;
+  }
+
+  #faq{
+    background-color: #e6ddd4;
+    padding: 3rem;
+    border-radius: 1rem;
+  }
+
+  dt {
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: #d07f57;
+    font-size: 2rem;
+  }
+  
+  dt::before {
+    content: "";
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+    margin-right: 1rem;
+    background: #15253e;
+  }
+
+  dd {
+    margin-bottom: 0.5rem;
+    margin-left: 30px;
+    font-size: 1.6rem;
+    color: #15253e;
   }
 
 
@@ -343,6 +385,56 @@ header, .navbar {
     transform: scale(1.2);
   }
 
+  #aboutus{
+    padding: 10rem;
+  }
+
+
+  #aboutus .card .card-img{
+    height: 55rem;
+    filter: brightness(40%);
+    border-radius: 1rem;
+  }
+
+  #aboutus .card .card-title{
+    font-size: 3rem;
+    color: #d07f57;
+    padding: 5rem;
+    text-align: center;
+  }
+
+  #aboutus .card .card-text{
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 0.5rem;
+  }
+
+  #container-aboutus .card{
+    margin: 2rem auto;
+  }
+
+  #container-aboutus .card .card-text{
+    font-size: 1.6rem;
+  }
+
+  .col-md-10{
+    margin: 0 auto;
+    padding: 2.5rem;
+  }
+
+
+  #aboutus .col-md-10 .card-title{
+    font-size: 3rem;
+    color: #d07f57;
+  }
+
+  #aboutus .col-md-10 .card-text{
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
+
+
 
   @media only screen and (max-width: 500px) {
     
@@ -387,7 +479,13 @@ header, .navbar {
       padding-top: 2rem;
     }
     .main-title.service::after {
-      top: 120px;
+      top: 115px;
+    }
+
+    /*FAQ*/
+
+    .main-title.faq::after {
+      top: 70px;
     }
   
     .service-box img {
@@ -424,13 +522,13 @@ header, .navbar {
       margin: 1rem 0 1rem 0;
     }
     
-  
-  
+ 
    #msg-box .img-contact {
         height: 15rem;
         border-radius: 50%;
         margin: 2rem auto 2rem;
     }
+
     
     html {
       overflow-x: hidden;
@@ -465,6 +563,55 @@ header, .navbar {
   transform: scale(3);
 }
     
+
+#container-aboutus .img-fluid{
+  width: 30rem;
+}
+
+#container-aboutus .col-md-6{
+  margin: 0 auto;
+   width: 30rem;
+}
+
+#aboutus .card .card-title{
+  font-size: 2rem;
+  color: #d07f57;
+  padding: 3rem;
+  text-align: center;
+}
+
+#container-aboutus .main-title::after{
+  width: 40%;
+  top: 10rem;
+  left: 30%;
+}
+
+#aboutus .card .card-text{
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+#container-aboutus .card .card-text{
+  font-size: 1.5rem;
+}
+
+.col-md-10{
+  margin: 0 auto;
+  padding-right: 1rem;
+}
+
+
+#aboutus .col-md-10 .card-title{
+  font-size: 2rem;
+  color: #d07f57;
+}
+
+#aboutus .col-md-10 .card-text{
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
     
 
   }
