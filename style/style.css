@@ -157,6 +157,17 @@ header, .navbar {
     margin-bottom: 8rem;
   }
 
+  #about-area h1 {
+    margin: 2rem auto;
+    text-align: center;
+    padding: 3rem;
+    color: #15253e;
+    background-color: #d07f57;
+    width: 80rem;
+    border-radius: 2rem;
+    text-decoration: underline;
+  }
+
   #about-area p {
       color: #15253e;
       font-size: 1.6rem;
